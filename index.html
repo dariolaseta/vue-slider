@@ -15,20 +15,24 @@
         <script src="https://unpkg.com/vue@3"></script>
 
         <main>
-            <div class="container d-block">
-                <div class="back">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </div>
+            <div id="carousel">
+                <div class="container">
+                    <img :src="images[0]" alt="carousel image">
 
-                <div class="next">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-
-                <div class="title">
-                    <h1 id="title"></h1>
-                </div>
-                <div class="info">
-                    <p id="info"></p>
+                    <div class="back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+    
+                    <div class="next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+    
+                    <div class="title">
+                        <h1 id="title"></h1>
+                    </div>
+                    <div class="info">
+                        <p id="info"></p>
+                    </div>
                 </div>
             </div>
         </main>
