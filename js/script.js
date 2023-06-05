@@ -9,7 +9,8 @@ createApp({
                 "img/03.webp",
                 "img/04.webp",
                 "img/05.webp",
-            ]
+            ],
+            imageIndex: 0
         }
     }
 }).mount("#carousel");
