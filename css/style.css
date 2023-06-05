@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+div.container{
+    height: 500px;
+    width: 800px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+div.back,
+div.next{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: blue;
+}
+
+div.back i,
+div.next i{
+    margin: auto;
+}
+
+div.back {
+    top: 50%;
+    left: 2%;
+}
+
+div.next{
+    top: 50%;
+    right: 2%;
+}
+
+.container{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
