@@ -19,11 +19,11 @@
                 <div class="container">
                     <img :src="images[imageIndex]" alt="carousel image">
 
-                    <div class="back">
+                    <div class="back" @click="prevButton()">
                         <i class="fa-solid fa-arrow-left"></i>
                     </div>
     
-                    <div class="next">
+                    <div class="next" @click="nextButton()">
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
     

@@ -12,5 +12,21 @@ createApp({
             ],
             imageIndex: 0
         }
+    },
+    methods:{
+        nextButton(){
+            if(this.imageIndex === this.images.length -1){
+                this.imageIndex = 0
+            }else{
+                this.imageIndex++;
+            }
+        },
+        prevButton(){
+            if(this.imageIndex === 0){
+                this.imageIndex = this.images.length - 1;
+            }else{
+                this.imageIndex--;
+            }
+        }
     }
 }).mount("#carousel");
